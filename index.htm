@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loan + Inflation Impact Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Loan + Inflation Impact Calculator</h1>
+  
+  <form id="loanForm">
+    <label for="amount">Loan Amount ($):</label>
+    <input type="number" id="amount" required>
+
+    <label for="interest">Annual Interest Rate (%):</label>
+    <input type="number" id="interest" step="0.01" required>
+
+    <label for="years">Loan Term (Years):</label>
+    <input type="number" id="years" required>
+
+    <label for="inflation">Annual Inflation Rate (%):</label>
+    <input type="number" id="inflation" step="0.01" required>
+
+    <button type="submit">Calculate</button>
+  </form>
+
+  <div id="results">
+    <h2>Results</h2>
+    <p id="monthlyPayment"></p>
+    <p id="totalPayment"></p>
+    <p id="realCost"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
